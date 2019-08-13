@@ -1,0 +1,89 @@
+# Properties file for algorithm-testing environment
+
+problemType=circuitRouting
+problemValueType=none
+limitExecTime=false
+maxExecTimeSeconds=3
+displayTime=true
+display=true
+printSummary=false
+
+
+# specific to this problem:
+circuitRoutingTester.randTestNumPoints=20
+circuitRoutingTester.randTestNumObstacles=10
+circuitRoutingTester.testLarge=true
+circuitRoutingTester.largeTestNumPoints=100
+circuitRoutingTester.largeTestNumObstacles=50
+
+
+
+# Sorting stuff:
+dictionary=/usr/dict/words
+
+numProblemParameters=2
+
+# How many algorithms, and where each algorithm is located.
+            # numAlgorithms=2
+numAlgorithms=1
+
+# Full path name to algorithm:
+alg0=CombAlgorithm
+            #alg1=MyAlgorithm
+
+# Output scaling: one function per algorithm
+# Scale functions:
+#   F0(n) = 1.0 (no scaling)
+#   F1(n) = A*n
+#   F2(n) = A*n^2
+#   F3(n) = A*n^3 
+#   F4(n) = A*log(n)
+#   F5(n) = A*n*log(n)
+#   F6(n) = A*sqrt(n)
+A0=1.0
+scale0=F0
+A1=1.0
+scale1=F0
+A2=1.0
+scale2=F0
+A3=1.0
+scale3=F0
+A4=1.0
+scale4=F0
+A5=1.0
+scale5=F0
+
+# test for correctness?
+testCorrectness=true
+
+# special tests?
+specialTest=false
+
+# test for performance?
+testPerformance=false
+# Test sizes for performance testing.
+numTests=3
+
+# numbers of points
+param0_testSize0=500
+param0_testSize1=1000
+param0_testSize2=1500
+param0_testSize3=2000
+param0_testSize4=2500
+
+# numbers of obstacles
+param1_testSize0=50
+param1_testSize1=100
+param1_testSize2=150
+param1_testSize3=200
+param1_testSize4=250
+
+# Use an average of how many data sets per test size?
+runsPerTest=5
+
+# Print stuff to screen.
+printToScreen=true
+
+debug=On
+# Time to wait for garbage collection.
+quiescentTime=1
